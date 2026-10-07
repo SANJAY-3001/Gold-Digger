@@ -10,6 +10,16 @@ const server = http.createServer(async(req , res) => {
         if (req.method === 'GET') {
             return await handleGet(res)
         }
+        else if (req.method === 'POST') {
+            console.log("post")
+            let body =''
+            for await (const chunk of req) {
+                body += chunk
+            }
+
+            console.log(body)
+            return
+        }
     }
     else if (!req.url.startsWith('/api')) {
         return await serveStatic(req , res , __dirname)
