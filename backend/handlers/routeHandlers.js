@@ -1,5 +1,6 @@
 import { generateGoldPrice } from "../utils/generateGoldPrice.js"
 import { sendResponse } from "../utils/sendResponse.js"
+import { writeTransaction } from '../utils/writeTransaction.js'
 
 
 export const handleGet = async(res) => {
@@ -23,5 +24,23 @@ export const handleGet = async(res) => {
     }
     catch (err) {
         console.log(err)
+    }
+}
+
+
+export const handlePost = async(req , res) => {
+    try {
+        let body =''
+        for await (const chunk of req) {
+            body += chunk
+        }
+        console.log(body)
+
+        await writeTransaction(body)
+
+        sendResponse(res , 201 , 'application/json' , body)
+    }
+    catch (err) {
+        console.error(err)
     }
 }
