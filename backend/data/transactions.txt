@@ -1,0 +1,4 @@
+currentTimeAndDate : 2026-10-08T10:49:31.493Z , amountPaid : ₹ 1000 , pricePerGram : ₹ 7506.3 , goldSold : 0.1332 grams
+currentTimeAndDate : 2026-10-08T10:49:34.582Z , amountPaid : ₹ 1000 , pricePerGram : ₹ 7497.06 , goldSold : 0.1334 grams
+currentTimeAndDate : 2026-10-08T10:49:37.059Z , amountPaid : ₹ 1000 , pricePerGram : ₹ 7488.34 , goldSold : 0.1335 grams
+currentTimeAndDate : 2026-10-08T10:49:39.587Z , amountPaid : ₹ 1000 , pricePerGram : ₹ 7495.37 , goldSold : 0.1334 grams
